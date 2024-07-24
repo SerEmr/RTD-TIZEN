@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remember The Day</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Remember The Day</h1>
+        <label for="reminderTitle">Título:</label>
+        <input type="text" id="reminderTitle" required>
+        <label for="reminderDescription">Descripción:</label>
+        <input type="text" id="reminderDescription" required>
+        <div class="datetime-container">
+            <div>
+                <label for="reminderDate">Fecha:</label>
+                <input type="date" id="reminderDate" required>
+            </div>
+            <div>
+                <label for="reminderTime">Hora:</label>
+                <input type="time" id="reminderTime" required>
+            </div>
+        </div>
+        <button id="setReminderButton">Registrar Recordatorio</button>
+        <br>
+        <a href="manage.html">Ver los demas Recordatorios</a>
+    </div>
+</body>
+</html>

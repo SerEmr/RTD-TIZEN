@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    color: #666;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+    width: calc(100% - 16px);
+    padding: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+button {
+    padding: 8px 16px;
+    font-size: 14px;
+    margin-top: 8px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f9f9f9;
+    margin: 8px 0;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+li button {
+    background-color: #dc3545;
+    margin-left: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+li button:first-of-type {
+    background-color: #ffc107;
+}
+
+li button:hover {
+    background-color: #c82333;
+}
+
+li button:first-of-type:hover {
+    background-color: #e0a800;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+    font-size: 12px;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Nuevo estilo para alinear los inputs de fecha y hora en una sola línea */
+.datetime-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.datetime-container div {
+    width: 48%;
+}
+
+.datetime-container label {
+    text-align: left;
+    margin: 0 0 5px 0;
+    display: block;
+}
+
+.datetime-container input {
+    width: 100%;
+    margin: 0;
+}
